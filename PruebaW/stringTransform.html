@@ -1,0 +1,14 @@
+<script>
+    function transformar(palabra){
+        var strUp= "";
+        for (let i = 0; i < palabra.length; i++) {
+            x = palabra.charCodeAt(i);
+            if (x >=65 && strUp <=90){
+                x +=32;
+            }
+            strUp += String.fromCharCode(x);
+            
+        }
+        return strUp;
+    }
+</script>
